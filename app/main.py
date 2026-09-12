@@ -4,9 +4,13 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Load vectorizer and model
-vectorizer = joblib.load('C:/Users/Mtechbro-94/Desktop/SMS_Spam_Detector/tfidf_vectorizer.pkl')
-model = joblib.load('C:/Users/Mtechbro-94/Desktop/SMS_Spam_Detector/svm_model.pkl')
+# Load vectorizer and model 
+vectorizer = joblib.load(
+    "C:/Users/rohit/OneDrive/Desktop/SMS-Spam-Detection-using-SVM/tfidf_vectorizer.pkl"
+)
+
+model = joblib.load("C:/Users/rohit/OneDrive/Desktop/SMS-Spam-Detection-using-SVM/svm_model.pkl"
+)
 
 # App UI
 st.set_page_config(page_title="SMS Spam Classifier", layout="centered")
